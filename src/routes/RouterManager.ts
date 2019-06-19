@@ -8,10 +8,10 @@ class RouterManager {
     new Portal()
   ]
 
-  static init(app: Application, router: Router) {
+  static async init(app: Application, router: Router) {
     let count: number = 0
 
-    RouterManager.routes.forEach((route, i) => {
+    await RouterManager.routes.forEach((route, i) => {
       switch(route.props.type.toUpperCase()) {
         case 'POST':
           router.route(route.props.url).post(route.join)
@@ -22,9 +22,9 @@ class RouterManager {
       }
       count = i
     })
-    app.use(router)
+    await app.use(router)
 
-    Logger.success(`${count} routes ready`)
+    await Logger.success(`${count} routes ready`)
   }
 }
 
