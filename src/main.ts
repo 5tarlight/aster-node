@@ -8,6 +8,7 @@ const router = Router()
 // Arguments
 app.set('port', process.env.PORT || 80)
 app.set('view engine', 'pug')
+app.set('views', join(__dirname, '/public/views'))
 
 // Router
 router.route('/').get((req, res) => {
