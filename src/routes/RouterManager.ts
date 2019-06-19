@@ -18,7 +18,6 @@ class RouterManager {
           router.route(route.props.url).get(route.join)
           break
       }
-      count = i
     })
     await app.use(router)
 
