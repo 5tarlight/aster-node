@@ -1,5 +1,6 @@
 import express, { Router, static as ss } from 'express'
 import { join } from 'path';
+import Logger from './logger';
 
 const app = express()
 const router = Router()
@@ -19,5 +20,5 @@ app.use(router)
 
 // Server
 app.listen(app.get('port'), () => {
-  console.log('server on')
+  Logger.success('Server is hosting on port ' + app.get('port'))
 })
