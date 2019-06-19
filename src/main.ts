@@ -11,7 +11,14 @@ app.set('view engine', 'pug')
 
 // Router
 router.route('/').get((req, res) => {
-  res.end('<h1>Hello World!</h1>')
+  req.app.render('portal', (err: Error, html: string) => {
+    if(err) {
+      Logger.err(err.stack || err.toString())
+      return
+    }
+
+    res.end(html)
+  })
 })
 
 // Registeration
