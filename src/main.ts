@@ -13,7 +13,7 @@ router.route('/').get((req, res) => {
   res.end('<h1>Hello World!</h1>')
 })
 
-// Register
+// Registeration
 app.use('/', ss(join(__dirname, '/public')))
 app.use(router)
 
