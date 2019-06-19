@@ -13,6 +13,11 @@ class Portal extends PugRouter {
       res.end(html)
     })
   }
+
+  props = {
+    url: '/',
+    type: 'get'
+  }
 }
 
 export default Portal
