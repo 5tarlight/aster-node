@@ -4,13 +4,11 @@ import PugRouter from "./PugRouter";
 import Logger from "../logger";
 
 class RouterManager {
-  static readonly routes: PugRouter[] = [
+  static routes: PugRouter[] = [
     new Portal()
   ]
 
   static async init(app: Application, router: Router) {
-    let count: number = 0
-
     await RouterManager.routes.forEach((route, i) => {
       switch(route.props.type.toUpperCase()) {
         case 'POST':
@@ -24,7 +22,7 @@ class RouterManager {
     })
     await app.use(router)
 
-    await Logger.success(`${count} routes ready`)
+    await Logger.success(`${RouterManager.routes.length} routes ready`)
   }
 }
 
