@@ -1,0 +1,15 @@
+.div-title-portal {
+  margin-left: 1rem;
+  padding: 0rem;
+}
+
+.div-title-portal h3 {
+  margin-top: -1.5rem;
+}
+
+.btn-start {
+  padding: 1rem;
+  background-image: url('/img/startbtn-bg.png');
+  background-repeat: no-repeat;
+  text-align: center;
+}
