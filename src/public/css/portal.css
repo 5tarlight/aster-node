@@ -9,7 +9,6 @@
 
 .btn-start {
   padding: 1rem;
-  background-image: url('/img/startbtn-bg.png');
-  background-repeat: no-repeat;
   text-align: center;
+  margin-top: 15%;
 }
