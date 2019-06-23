@@ -5,11 +5,11 @@ import Logger from "../logger";
 class Portal extends PugRouter {
   join(req: Request, res: Response) {
     req.app.render('portal', (err: Error, html: string) => {
-      if(err) {
+      if (err) {
         Logger.err(err.stack || err.toString())
         return
       }
-  
+
       res.end(html)
     })
   }

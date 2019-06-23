@@ -10,7 +10,7 @@ class RouterManager {
 
   static async init(app: Application, router: Router) {
     await RouterManager.routes.forEach((route, i) => {
-      switch(route.props.type.toUpperCase()) {
+      switch (route.props.type.toUpperCase()) {
         case 'POST':
           router.route(route.props.url).post(route.join)
           break
