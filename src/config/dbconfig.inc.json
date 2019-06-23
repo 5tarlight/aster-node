@@ -1,0 +1,7 @@
+{
+  "db": "aster",
+  "host": "localhost",
+  "user": "root",
+  "password": "YOUR DB PASSWORD HERE",
+  "port": 3306
+}
