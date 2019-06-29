@@ -1,16 +1,21 @@
 html
   head
     meta(charset='utf8')
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
     link(rel="icon" href="/img/favicon.ico")
     link(rel="shortcut icon", href="/img/favicon.ico", type="image/x-icon")
     link(href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet")
-    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
     script(src="/js/global.js")
     link(rel="stylesheet", href="/css/global.css")
     block head
   body
     header
-      nav.nav-home(onClick='window.location.href="/"')
+      nav(onClick='window.location.href="/"')
+        span.glyphicon.glyphicon-home(aria-hidden=true)
       nav.nav-login
         a(href='/login') 로그인
       nav.nav-notice 
