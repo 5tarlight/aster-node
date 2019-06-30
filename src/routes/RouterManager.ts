@@ -1,11 +1,12 @@
 import { Application, Router } from "express";
-import { Portal } from ".";
+import { Portal, Game } from ".";
 import PugRouter from "./PugRouter";
 import Logger from "../logger";
 
 class RouterManager {
   static routes: PugRouter[] = [
-    new Portal()
+    new Portal(),
+    new Game()
   ]
 
   static async init(app: Application, router: Router) {
