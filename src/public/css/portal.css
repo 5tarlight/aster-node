@@ -16,4 +16,9 @@
   top: 50%;
   margin-left: -10rem;
   margin-top: -5rem;
+  transition: transform 200ms ease;
+}
+
+.btn-start:hover {
+  transform: scale(1.5, 1.5);
 }
