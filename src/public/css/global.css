@@ -8,6 +8,26 @@ body {
   font-family: Roboto;
 }
 
+.body-main {
+  width: 100%;
+  height: 95%;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.bg-star {
+  overflow: hidden;
+}
+
+.bg-star>div {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 95%;
+  background-size: 1500px 750px;
+  transition: background-position 100ms ease;
+}
+
 nav a {
   text-decoration: none;
   color: white

@@ -20,4 +20,8 @@ html
         a(href='/login') 로그인
       nav.nav-notice 
         a(href='/notice') 공지
-    block body
+    article.body-main
+      .bg-star
+        div(style="background-image: url(\"/img/star-front.png\"); background-position: -8.34px -3.89px;")
+        div(style="background-image: url(\"/img/star-back.png\"); background-position: -16.68px -7.78px; animation-delay: 2s;")
+      block body
