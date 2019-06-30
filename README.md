@@ -35,3 +35,5 @@ sudo yarn start
 
 - Starlight <developerstarlight@gmail.com>
 
+### License
+GNU Lesser General Public License v3.0
