@@ -4,6 +4,8 @@ import Logger from "../../logger";
 
 class Game extends PugRouter {
   join(req: Request, res: Response) {
+    
+
     req.app.render('game', (err: Error, html: string) => {
       Logger.info(`${req.ip} game`)
       if (err) {
