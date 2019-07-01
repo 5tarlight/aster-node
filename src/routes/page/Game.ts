@@ -4,7 +4,10 @@ import Logger from "../../logger";
 
 class Game extends PugRouter {
   join(req: Request, res: Response) {
-    
+    if(!req.session || !req.session.verified) {
+      res.redirect('/login')
+      return
+    }
 
     req.app.render('game', (err: Error, html: string) => {
       Logger.info(`${req.ip} game`)
