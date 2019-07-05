@@ -1,0 +1,23 @@
+.login-box {
+  padding: 2rem;
+  width: 100rem;
+  height: 20rem;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-left: 14%;
+  margin-top: 15%;
+}
+
+.login-box input {
+  display: block;
+  height: 4rem;
+  font-size: 1.5rem;
+  width: 100%;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 1px;
+}
+
+.login-box a {
+  margin-right: 15px;
+}
