@@ -2,8 +2,11 @@ extends layout
 
 block head
   title Aster - 로그인
+  link(rel="stylesheet", href="/css/login.css")
 
 block body
   .login-box
     input#input-email(type="email", name="email" placeholder='이메일')
     input#input-password(type="password", name="password" placeholder='비밀번호')
+    a(href='/passwordsearch') 비밀번호 찾기
+    a(href='/signup') 회원가입
