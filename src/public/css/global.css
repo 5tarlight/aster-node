@@ -23,9 +23,10 @@ body {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 95%;
+  height:95%;
   background-size: 1500px 750px;
   transition: background-position 100ms ease;
+  z-index: -1000000;
 }
 
 nav a {
