@@ -21,7 +21,7 @@ class Logger {
     const file = `${t[0]}_${t[1]}_${t[2]}.log`
     const root = join(__dirname, `/log/${file}`)
     console.log(`[${t[0]}-${t[1]}-${t[2]} ${t[3]}:${t[4]}:${t[5]}] ${text}`)
-    writeFileSync(root, raw + '\n', {flag: 'a', encoding: 'utf8'})
+    writeFileSync(root, `[${t[0]}-${t[1]}-${t[2]} ${t[3]}:${t[4]}:${t[5]}] ${raw}\n`, {flag: 'a', encoding: 'utf8'})
   }
 
   static info(text: string): void {
