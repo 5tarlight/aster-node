@@ -21,3 +21,17 @@
 .login-box a {
   margin-right: 15px;
 }
+
+.show-box {
+  margin-top: 1rem;
+}
+
+.show-box a {
+  float: left;
+}
+
+.show-box button {
+  float: right;
+  background: transparent;
+  border: 2px solid white;
+}
