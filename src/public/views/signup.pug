@@ -7,9 +7,9 @@ block head
 
 block body
   .login-box
-    input#input-email(type="email", name="email" placeholder='이메일')
-    input#input-password(type="password", name="password" placeholder='비밀번호')
-    input#input-password(type="password", name="password" placeholder='비밀번호 확인')
+    input.input-email#input-email(type="email", name="email" placeholder='이메일')
+    input.input-pw#input-password(type="password", name="password" placeholder='비밀번호')
+    input.input-pw-re#input-password(type="password", name="password" placeholder='비밀번호 확인')
     .show-box
       a(href='/login') 로그인
-      button 회원가입
+      button.signup 회원가입
