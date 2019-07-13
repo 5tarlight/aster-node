@@ -20,9 +20,14 @@ $(() => {
       alert('비밀번호를 다시 입력해 주십시오.')
       return
     }
-  })
 
-  email = email.trim()
-  pw = pw.trim()
-  repw = repw.trim()
+    email = email.trim()
+    pw = pw.trim()
+    repw = repw.trim()
+
+    if(pw !== repw) {
+      alert('비밀번호가 일치하지 않습니다.')
+      return
+    }
+  }) 
 })
