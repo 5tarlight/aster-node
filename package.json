@@ -21,7 +21,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "socket.io": "^2.2.0",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.2"
